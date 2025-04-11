@@ -1,0 +1,60 @@
+فایل CSS شما
+.ps__rail-y {
+    background-color: red;
+    width: 20px;
+    opacity: 100px;
+  }
+  
+  .ps__thumb-y {
+    background-color: red;
+    width: 20px;
+    opacity: 100px;
+  }
+  
+  .ps__thumb-y:hover {
+    background-color: red;
+    width: 20px;
+    opacity: 100px;
+  }
+  
+  .ps__rail-x {
+    background-color: red;
+  }
+  
+  .ps__thumb-x {
+    background-color: red;
+  }
+  
+  .ps__thumb-x:hover {
+    background-color: red;
+  }
+  /* فایل CSS شما */
+.ps__rail-y {
+    background-color: #f0f0f0; /* رنگ پس‌زمینه ریل عمودی */
+  }
+  
+  .ps__thumb-y {
+    background-color: #888; /* رنگ انگشتی عمودی */
+    background-image: url('../img/hich.jpg'); /* عکس به عنوان پس‌زمینه */
+    background-size: cover; /* تنظیم اندازه عکس */
+    background-position: center; /* تنظیم موقعیت عکس */
+  }
+  
+  .ps__thumb-y:hover {
+    background-color: #555; /* رنگ انگشتی هنگام هاور */
+  }
+  
+  .ps__rail-x {
+    background-color: #f0f0f0; /* رنگ پس‌زمینه ریل افقی */
+  }
+  
+  .ps__thumb-x {
+    background-color: #888; /* رنگ انگشتی افقی */
+    background-image: url('../../../public/img/images.jpg'); /* عکس به عنوان پس‌زمینه */
+    background-size: cover; /* تنظیم اندازه عکس */
+    background-position: center; /* تنظیم موقعیت عکس */
+  }
+  
+  .ps__thumb-x:hover {
+    background-color: #555; /* رنگ انگشتی هنگام هاور */
+  }
