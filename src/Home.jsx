@@ -2,6 +2,7 @@
 import Banner from "./componnet/banner/Banner"
 import Questions from "./componnet/questions/Questions"
 import Forest from "./componnet/forest/Forest"
+import Product from "./componnet/product/Product"
 
 export default function Home() {
   return (
@@ -10,7 +11,8 @@ export default function Home() {
      <Banner></Banner>
      <Questions></Questions>
      <Forest></Forest>
-     <div className="h-[1500px] w-full border border-red-900 "></div>
+     <Product></Product>
+     
     </div>
   )
 }
