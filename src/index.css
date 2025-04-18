@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+.bg-banner {
+    background-image: url('./img/banner/fall.jpg');
+}
+
+.bg-forest {
+    background-image: url('./img/bg/forest.jpg');
+}

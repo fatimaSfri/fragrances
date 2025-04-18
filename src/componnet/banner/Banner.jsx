@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import '../../index.css'
 
 const products = [
   { id: 1, img: './img/product/nature.jpg', price:'160 T' , number:35 , name :"MASALA" , text:"SPA" },
@@ -24,7 +25,7 @@ export default function Banner() {
   };
 
   return (
-    <div className='w-full h-[650px] bg-cover bg-center flex justify-center items-end relative' style={{ backgroundImage: 'url(./img/banner/fall.jpg)' }}>
+    <div className='w-full h-[650px] bg-banner bg-cover bg-center flex justify-center items-end relative ' >
         <div className=' absolute self-start sm:mt-12 max-sm:mt-16 flex '>
 
           <div className='flex  flex-col items-center justify-center -mr-[10px]'>
