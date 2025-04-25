@@ -1,23 +1,16 @@
-
-import CustomScroll from './componnet/customScroll/CustomScroll'
-import CustomCursor from './componnet/cursor/CustomCursor';
 import Home from '../src/Home.jsx'
-import React, { useState } from 'react';
-import Header from "./componnet/header/Header"
+import { Routes, Route } from 'react-router-dom';
+import ShoppingCart from './componnet/shopping/ShoppingCart.jsx';
 
 function App() {
-  const [isScrolled, setIsScrolled] = useState(false);
 
-  const handleScroll = (scrollTop) => {
-    setIsScrolled(scrollTop > 250); 
-  };
   return (
     <>
-    <CustomCursor />
-    <Header isScrolled={isScrolled} />
-    <CustomScroll onScroll={handleScroll}>
-     <Home></Home>
-    </CustomScroll>
+    <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/shoppingCart" element={<ShoppingCart />} />
+    </Routes>
+   
     </>
   )
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../index.css';
+import { Link } from 'react-router-dom';
 
 const products = [
   { id: 1, img: './img/product/meditation.jpg', price: '195 ', number: 87, name: 'SEA BEAUTY', text: 'MEDITATION' },
@@ -17,6 +18,7 @@ export default function Product () {
     <div className="w-full min-h-[650px] flex justify-center items-center py-28 bg-gray-300 md: pb-60 ">
       <div className="grid grid-cols-1 max-md:grid-cols-2 md:grid-cols-4 max-sm:grid-cols-1 gap-6  max-w-7xl  justify-items-center">
         {products.map(product => (
+          <Link to="/shoppingCart">
           <div key={product.id} className="min-w-[200px] max-w-[350px] ">
             <div className="w-full flex justify-between items-center">
               <div className="flex items-center ">
@@ -34,6 +36,7 @@ export default function Product () {
               <p className="md:text-[14px] max-md:text-[12px] text-gray-900">قیمت : {product.price} تومان</p>
             </div>
           </div>
+          </Link>
         ))}
       </div>
     </div>

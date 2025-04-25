@@ -1,5 +1,34 @@
 @import "tailwindcss";
 
+
+
+@font-face {
+    font-family: 'Kalameh-Bold'; 
+    src: url('../Font/Kalameh-Bold.ttf') format('TrueType');  
+  }
+  
+  @font-face {
+    font-family: 'Kalameh-Regular'; 
+    src: url('../Font/Kalameh-Regular.ttf') format('TrueType'); 
+   
+  }
+  
+  @font-face {
+    font-family:'Kalameh-Thin'; 
+    src: url('../Font/Kalameh-Thin.ttf') format('TrueType'); 
+   
+  }
+  
+  @font-face {
+    font-family: 'Kalameh-Black' ; 
+    src: url('../Font/Kalameh-Black.ttf') format('TrueType'); 
+   
+  }
+  
+  * {
+     font-family: "Kalameh-Regular";
+  }
+  
 .bg-banner {
     background-image: url('./img/banner/fall.jpg');
 }
