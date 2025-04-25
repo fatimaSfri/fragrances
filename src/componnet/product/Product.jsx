@@ -2,14 +2,14 @@ import React from 'react';
 import '../../index.css';
 
 const products = [
-  { id: 1, img: './img/product/nature.jpg', price: '160 ', number: 35, name: 'MASALA', text: 'SPA' },
-  { id: 2, img: './img/product/family.jpg', price: '185 ', number: 75, name: 'PINE', text: 'YOGA' },
-  { id: 3, img: './img/product/night-relax.jpg', price: '175 ', number: 87, name: 'SEA BEAUTY', text: 'MEDITATION' },
-  { id: 4, img: './img/product/sunrise.jpg', price: '150 ', number: 42, name: 'SUNRISE', text: 'WELLNESS' },
-  { id: 5, img: './img/product/forest.jpg', price: '170 ', number: 63, name: 'FOREST', text: 'NATURE' },
-  { id: 6, img: './img/product/ocean.jpg', price: '190 ', number: 29, name: 'OCEAN', text: 'RELAX' },
-  { id: 7, img: './img/product/mountain.jpg', price: '165 ', number: 51, name: 'MOUNTAIN', text: 'ADVENTURE' },
-  { id: 8, img: './img/product/sunset.jpg', price: '180 ', number: 94, name: 'SUNSET', text: 'CALM' },
+  { id: 1, img: './img/product/meditation.jpg', price: '195 ', number: 87, name: 'SEA BEAUTY', text: 'MEDITATION' },
+  { id: 2, img: './img/product/magical.jpg', price: '195 ', number: 87, name: 'MASHROOM', text: 'MEDITATION' },
+  { id: 3, img: './img/product/sea.jpg', price: '195 ', number: 88, name: 'SEA ARAM', text: 'YOGA' },
+  { id: 4, img: './img/product/meditation.jpg', price: '195 ', number: 83, name: 'DERAKHTANE ZIBA', text: 'YOGA' },
+  { id: 5, img: './img/product/sampel4.jpg', price: '195 ', number: 67, name: 'SEA BEAUTY', text: 'SPA' },
+  { id: 6, img: './img/product/sampel2.jpg', price: '195 ', number: 63, name: 'SEA BEAUTY', text: 'SPA' },
+  { id: 7, img: './img/product/sampel3.jpg', price: '195 ', number: 68, name: 'DERAKHSHAN', text: 'YOGA' },
+  { id: 8, img: './img/product/sampel1.jpg', price: '195 ', number: 29, name: 'ZIBA KHOFTE', text: 'MEDITATION' },
 ];
 
 export default function Product () {
