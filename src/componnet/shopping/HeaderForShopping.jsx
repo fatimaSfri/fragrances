@@ -19,7 +19,7 @@ export default function HeaderForShopping() {
 
         <div>
           <img
-            src="../../../public/img/logo/gold-logo.png"
+            src="../../img/logo/gold-logo.png"
             alt=""
             className="opacity-[65%] md:h-16  max-md:h-12"
           />
