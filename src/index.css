@@ -28,11 +28,15 @@
   * {
      font-family: "Kalameh-Regular";
   }
+
+  .Kalameh-thin {
+    font-family: "Kalameh-Thin";
+  }
   
 .bg-banner {
-    background-image: url('./img/banner/fall.jpg');
+    background-image: url('../img/banner/fall.jpg');
 }
 
 .bg-forest {
-    background-image: url('./img/bg/forest.jpg');
+    background-image: url('../img/bg/forest.jpg');
 }

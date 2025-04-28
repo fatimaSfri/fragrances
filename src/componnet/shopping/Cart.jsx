@@ -81,11 +81,11 @@ export default function Cart() {
 
 
   return (
-    <div className=" w-full border-8 border-sky-800 py-6 " dir="rtl">
-      <div className="flex items-center justify-around border-2 gap-4 flex-wrap ">
+    <div className=" w-full  border-b-2 border-[#adbcb5] pt-6 pb-2 " dir="rtl">
+      <div className="flex items-center justify-around  gap-4 flex-wrap ">
       {/*  */}
       <div className="flex gap-2 items-center flex-wrap justify-center">
-      <div className="max-md:min-w-[280px] max-md:max-w-[400px] md:min-w-[350px] md:max-w-[450px] border-2 border-red-800">
+      <div className="max-md:min-w-[280px] max-md:max-w-[400px] md:min-w-[350px] md:max-w-[450px] ">
         <div className="w-full flex justify-between items-center">
           <div className="flex items-center ">
             <p className="text-[32px] text-[#adbcb5] bg-[#886b41] m-1 px-1 ">
@@ -97,11 +97,11 @@ export default function Cart() {
         <img
           src={product.img}
           alt=""
-          className="w-full md:h-60 max-md:h-56  border-6 border-[#adbcb5]"
+          className="w-full md:h-60 max-md:h-56 border-6 border-[#adbcb5]"
         />
       </div>
       {/*  */}
-      <div className=" text-right flex flex-col gap-10  border border-green-800 md:-mt-4">
+      <div className=" text-right flex flex-col gap-10  md:-mt-4">
         <h2 className=" text-gray-800 border-b sm:text-[18px] max-sm:text-[16px] pb-2">
           {oudData.title.split('"')[0]}
           <span className="text-[#886b41]">
@@ -134,41 +134,44 @@ export default function Cart() {
        
       <div className="flex flex-col items-center gap-4 p-4  ">
         {/* عنوان */}
-        <h2 className="text-lg font-bold text-gray-800">قهوه موکا: 238 قنات</h2>
+        <p className="md:text-[20px] max-md:text-[18px]  text-[#886b41] w-full text-center">قیمــت محصول  :  <span className="text-gray-800">{product.price} تومـــان</span> </p>
 
         {/* بخش کانتر */}
-        <div className="flex items-center gap-3">
+        <div className="flex  gap-2 items-center">
+          
+        <div className="flex items-center gap-3 border-2 rounded-lg border-[#886b41]">
           <button
             onClick={handleDecrement}
-            className="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full text-xl font-semibold text-gray-600 hover:bg-gray-300"
+            className="w-4 h-6 flex items-center justify-center rounded-lg text-xl font-semibold text-gray-800 hover:bg-gray-300 cursor-pointer"
           >
             -
           </button>
-          <span className="text-lg font-medium">{count}</span>
+          <span className="font-medium">{count}</span>
           <button
             onClick={handleIncrement}
-            className="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-full text-xl font-semibold text-gray-600 hover:bg-gray-300"
+            className="w-4 h-6 flex items-center justify-center rounded-lg text-xl font-semibold text-gray-800 hover:bg-gray-300 cursor-pointer"
           >
             +
           </button>
         </div>
+        <p className="md:text-[16px] max-md:text-[14px]">تعداد محصول سبد</p>
+        </div>
 
         {/* دکمه سبد خرید */}
-        <button className="px-4 py-2 bg-[#8B5A2B] text-white rounded-lg hover:bg-[#704822] transition-colors">
-          سبد خرید
+        <button className="w-full py-1 bg-[#8B5A2B] text-white rounded-lg hover:bg-[#704822] transition-colors md:text-[18px] max-md:text-[16px]">
+           سفارش محصول
         </button>
 
         {/* متن پایین */}
-        <p className="text-sm text-gray-600">ارسال رایگان با حداقل سفارش</p>
+        <p className="md:text-[16px] max-md:text-[14px] text-gray-600" >ارســــال رایــگــان بــه کـــل ایـــــران </p>
       </div>
       </div>
 
-   <div className="border-2 col-span-full flex max-sm:flex-col justify-center gap-6">
-  
+   <div className=" col-span-full flex max-sm:flex-col justify-between gap-6">
+   <div className="overflow-auto max-sm:w-full sm:max-w-[750px] sm:min-w-[550px]  md:pr-8  flex items-center max-md:justify-center" >
       {/* پیش‌نمایش سفارش‌ها در پایین صفحه */}
       {count > 0 && (
-        <div className="overflow-auto max-sm:w-full sm:max-w-[650px] am:min-w-[450px] border border-red-800">
-          <div className="flex md:gap-3 justify-evenly items-center">
+          <div className="flex gap-2 items-center max-md:justify-center ">
             {/* نمایش آیتم‌ها تا maxItems */}
             {previewItems.slice(0, maxItems).map((item, index) => (
               <div
@@ -178,27 +181,26 @@ export default function Cart() {
                 <img
                  src={product.img}
                   alt={item.name}
-                  className="w-12 h-12 object-cover"
+                  className="w-12 h-12 object-cover border-2 border-[#adbcb5]"
                 />
-                <span className="text-sm text-gray-700">{item.name}</span>
               </div>
             ))}
             {/* نمایش نشانه "بیشتر" اگر آیتم‌های بیشتری وجود داشته باشد */}
             {previewItems.length > maxItems && (
               <div className="flex flex-col items-center gap-1 min-w-[80px]">
-                <div className="w-12 h-12 flex items-center justify-center bg-gray-100 rounded-full">
-                  <span className="text-sm text-gray-500">
+                <div className="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-full">
+                  <span className="text-[16px] text-gray-500">
                     +{previewItems.length - maxItems}
                   </span>
                 </div>
-                <span className="text-sm text-gray-700">بیشتر</span>
+                <span className="text-[12px] text-gray-700">بیشتر</span>
               </div>
             )}
           </div>
-        </div>
-      )}
-     <div className="sm:w-1/2 border flex items-center sm:justify-end max-sm:justify-center sm:px-6">
-    <img src="../img/icon/1.png" alt="" className="h-[90px]" />
+      )} </div>
+     <div className="px-10 flex flex-col items-center sm:justify-end max-sm:justify-center max-md:mx-auto ">
+    <img src="../img/icon/1.png" alt="" className="h-[80px]" />
+     <p className="Kalameh-thin text-[16px]">professional Handmode perfumes</p>
    </div>
 
   </div>
