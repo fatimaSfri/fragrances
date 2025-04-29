@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import '../../index.css'
+import './Banner.css'
 
 const products = [
   { id: 1, img: './img/product/nature.jpg', price:'160 T' , number:35 , name :"MASALA" , text:"SPA" },
@@ -34,7 +34,7 @@ export default function Banner() {
           </div>
 
           <div>
-            <img src="../../../public/img/logo/logo.png" alt="" className='opacity-[65%] sm:w-14 sm:h-14  max-sm:w-12 max-sm:h-12' />
+            <img src="../img/logo/logo.png" alt="" className='opacity-[65%] sm:w-14 sm:h-14  max-sm:w-12 max-sm:h-12' />
           </div>
 
           <div className='flex  flex-col items-center justify-center -ml-2'>
