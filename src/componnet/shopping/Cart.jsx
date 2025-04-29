@@ -79,8 +79,8 @@ export default function Cart() {
   }, []);
 
 
-
   return (
+    
     <div className=" w-full  border-b-2 border-[#adbcb5] pt-6 pb-2 " dir="rtl">
       <div className="flex items-center justify-around  gap-4 flex-wrap ">
       {/*  */}
@@ -200,7 +200,7 @@ export default function Cart() {
       )} </div>
      <div className="px-10 flex flex-col items-center sm:justify-end max-sm:justify-center max-md:mx-auto ">
     <img src="../img/icon/1.png" alt="" className="h-[80px]" />
-     <p className="Kalameh-thin text-[16px]">professional Handmode perfumes</p>
+     <p className="Kalameh-thin text-[16px]  sm:tracking-widest">professional Handmode perfumes</p>
    </div>
 
   </div>
