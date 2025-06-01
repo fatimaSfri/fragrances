@@ -26,7 +26,7 @@ export default function Banner() {
 
   return (
     <div className='w-full h-[650px] bg-banner bg-cover bg-center flex justify-center items-end relative ' >
-        <div className=' absolute self-start sm:mt-12 max-sm:mt-16 flex '>
+        <div className=' absolute self-start sm:mt-24 max-sm:mt-24 flex '>
 
           <div className='flex  flex-col items-center justify-center -mr-[10px]'>
             <p className='sm:text-[16px] max-sm:text-[14px]  text-[#5A382F] font-bold '>MOMENT OF LIFE</p>

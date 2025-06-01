@@ -12,7 +12,7 @@ export default function Home() {
 const [isScrolled, setIsScrolled] = useState(false);
 
   const handleScroll = (scrollTop) => {
-    setIsScrolled(scrollTop > 250); 
+    setIsScrolled(scrollTop > 20); 
   };
   return (
     <>

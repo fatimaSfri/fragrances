@@ -161,8 +161,7 @@ const ProductSlider = () => {
                     className="md:w-full h-52 object-cover border-6 border-[#886b41]  "
                   />
                 </div>
-              </div>
-              
+
                 <div className="flex  items-center justify-end">
                 <p className=" text-right text-[16px] text-gray-700 select-none px-1">
                   {name}
@@ -173,6 +172,8 @@ const ProductSlider = () => {
                   <div className="h-1 w-2 bg-[#adbcb5] rounded-r-full"></div>
                   
                 </div>
+              </div>
+              
             </div>
 
           ))}

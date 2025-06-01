@@ -29,7 +29,7 @@ const CustomScroll = ({ children , onScroll }) => {
     scrollToOnReload: true,
   };
   return (
-    <PerfectScrollbar options={options}  onScrollY={(container) => onScroll(container.scrollTop)}  style={{ height: '100vh'}}>
+    <PerfectScrollbar options={options}  onScrollY={(container) => onScroll(container.scrollTop)}  style={{ height: '100vh' ,}}>
       <div>{children}</div>
     </PerfectScrollbar>
   );
