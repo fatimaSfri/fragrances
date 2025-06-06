@@ -26,7 +26,7 @@ export default function Banner() {
 
   return (
     <div className='w-full h-[650px] bg-banner bg-cover bg-center flex justify-center items-end relative ' >
-        <div className=' absolute self-start sm:mt-24 max-sm:mt-24 flex '>
+        {/* <div className=' absolute self-start sm:mt-24 max-sm:mt-24 flex '>
 
           <div className='flex  flex-col items-center justify-center -mr-[10px]'>
             <p className='sm:text-[16px] max-sm:text-[14px]  text-[#5A382F] font-bold '>MOMENT OF LIFE</p>
@@ -42,9 +42,9 @@ export default function Banner() {
            <p className='sm:text-[16px]  max-sm:text-[14px] opacity-50 font-black'>عــــود های دست ساز</p>
           </div>
 
-        </div>
+        </div> */}
     
-      <div className=" w-full max-sm:hidden sm:flex md:justify-center md:gap-8 max-md:justify-evenly  py-6 ">
+      {/* <div className=" w-full max-sm:hidden sm:flex md:justify-center md:gap-8 max-md:justify-evenly  py-6 ">
         {products.map(product => (
           <div key={product.id} className="min-w-[290px] max-w-[500px] shadow-lg  ">
             <div className=' w-full flex justify-between items-center '>
@@ -59,8 +59,32 @@ export default function Banner() {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
 
+
+<div className="w-full max-sm:hidden sm:flex md:justify-center md:gap-8 max-md:justify-evenly py-6">
+  {products.map(product => (
+    <div key={product.id} className="min-w-[290px] max-w-[500px] shadow-lg">
+      <div className="w-full flex justify-between items-center px-4 pt-4">
+        <div className="flex items-center text-white">
+          <p className="text-[28px]">{product.number}</p>
+          <p className="px-1 text-[12px] pt-1">{product.name}</p>
+        </div>
+        <p className="text-white text-[12px]">{product.text}</p>
+      </div>
+      <div className="w-full aspect-[5/3]">
+        <img
+          src={product.img}
+          alt={product.name}
+          className="w-full h-full object-contain border-4 border-[#886b41] border-solid"
+        />
+      </div>
+      <div className="px-4 py-[2px]">
+        <p className="text-white text-[12px]">PRICE: {product.price}</p>
+      </div>
+    </div>
+  ))}
+</div>
      
       <div className=" mx-auto p-5 sm:hidden max-w-[400px] min-w-[300px]">
         <Slider {...settings}>
