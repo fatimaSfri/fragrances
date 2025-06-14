@@ -2,10 +2,10 @@ import "../../index.css";
 
 export default function HeaderForShopping() {
    
-   const odd ="relative text-[#adbcb5] md:text-[20px] sm:text-[18px] max-sm:text-[14px] max-sm:font-bold cursor-pointerafter:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:bg-white  after:w-0 after:transition-all after:duration-300 hover:after:w-full"
+   const odd ="relative text-white md:text-[20px] sm:text-[18px] max-sm:text-[14px] max-sm:font-bold cursor-pointerafter:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:bg-white  after:w-0 after:transition-all after:duration-300 hover:after:w-full"
 
   return (
-    <div className="bg-banner sm:h-24 max-sm:h-16 bg-cover w-full flex sm:justify-between px-10 items-center relative max-sm:justify-end">
+    <div className="bg-banner sm:h-24 max-sm:h-16 bg-cover w-full flex flex-row-reverse sm:justify-between px-10 items-center relative max-sm:justify-end ">
       <div className="flex gap-4 max-sm:hidden ">
         <div className="flex  flex-col items-center justify-center -mr-[10px]">
           <p className="sm:text-[16px] max-sm:text-[14px]  text-[#adbcb5] font-bold ">

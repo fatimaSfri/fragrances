@@ -82,10 +82,10 @@ export default function Cart() {
   return (
     
     <div className=" w-full  border-b-2 border-[#adbcb5] pt-6 pb-2 " dir="rtl">
-      <div className="flex items-center justify-around  gap-4 flex-wrap ">
+      <div className="flex items-center justify-around   gap-4 flex-wrap ">
       {/*  */}
-      <div className="flex gap-2 items-center flex-wrap justify-center">
-      <div className="max-md:min-w-[280px] max-md:max-w-[400px] md:min-w-[350px] md:max-w-[450px] ">
+      <div className="flex gap-6 items-center flex-wrap justify-center">
+      <div className=" min-w-[200px] max-w-[300px] ">
         <div className="w-full flex justify-between items-center">
           <div className="flex items-center ">
             <p className="text-[32px] text-[#adbcb5] bg-[#886b41] m-1 px-1 ">
@@ -97,11 +97,11 @@ export default function Cart() {
         <img
           src={product.img}
           alt=""
-          className="w-full md:h-60 max-md:h-56 border-6 border-[#adbcb5]"
+          className="aspect-square object-cover border-6 border-[#adbcb5]"
         />
       </div>
       {/*  */}
-      <div className=" text-right flex flex-col gap-10  md:-mt-4">
+      <div className=" text-right flex flex-col gap-10 md:-mt-4 max-sm:p-8 ">
         <h2 className=" text-gray-800 border-b sm:text-[18px] max-sm:text-[16px] pb-2">
           {oudData.title.split('"')[0]}
           <span className="text-[#886b41]">

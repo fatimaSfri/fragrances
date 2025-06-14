@@ -3,8 +3,8 @@
 
 const Header = ({ isScrolled }) => {
   return (
-    <div className={` fixed w-full  h-[80px] z-10 transition-all duration-300 flex max-sm:flex-col items-center sm:justify-between  gap-8 ${
-      isScrolled ? 'bg-[#886b41] bg-opacity-80 px-8 max-sm:justify-center' : 'bg-transparent sm:mx-14 max-sm:mx-5 md:py-8 max-md:py-6 '
+    <div className={` fixed w-full h-[80px] z-10 transition-all duration-300 flex max-sm:flex-col items-center sm:justify-between gap-8  ${
+      isScrolled ? 'bg-[#886b41] bg-opacity-80 px-8 max-sm:justify-center' : 'bg-transparent sm:mx-14  md:py-8 max-md:py-6 '
     }`}>
 
      
@@ -52,7 +52,8 @@ const Header = ({ isScrolled }) => {
 </div>
 
 <div>
-  <img src="../img/logo/logo.png" alt="" className='opacity-[65%] sm:w-14 sm:h-14  max-sm:w-12 max-sm:h-12' />
+  <img src="../img/logo/logo.png" alt="" className='opacity-[65%] sm:w-14 sm:h-14 
+   max-sm:w-12 max-sm:h-12' />
 </div>
 
 <div className='flex  flex-col items-center justify-center -ml-2'>

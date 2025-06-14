@@ -118,9 +118,9 @@ const Questionnaire = () => {
 
   return (
     <div dir="rtl" className="bg-gray-300 py-6">
-      <div className="lg:px-16 max-lg:px-8 max-md:px-2">
+      <div className="lg:px-16 max-lg:px-8 max-md:px-2  max-sm:px-4 ">
         <div className="flex  items-center justify-center sm:gap-3 max-sm:gap-1 pb-6">
-          <div className="flex  mt-2">
+          <div className="flex mt-2">
             <div className="md:w-3 h-2 max-md:w-2  bg-[#46493e] rounded-s-2xl"></div>
             <div className="md:w-3 h-2 max-md:w-2  bg-[#caab7f] "></div>
             <div className="md:w-3 h-2 max-md:w-2  bg-[#5a372f] "></div>
@@ -204,31 +204,25 @@ const Questionnaire = () => {
         ))}
         {isComplete && matchedProducts.length > 0 && (
           <div className="mt-12 text-center animate-fadeIn">
-            <div className="flex items-center justify-center relative  py-6">
-            <div className="flex ">
-            
-            
-            
-          </div>
-            
-          <div className="w-56 h-5  bg-[#adbcb5] rounded-xl overflow-hidden backdrop-blur-[90px] blur-[1.5px]">
-          <div className="w-42 h-5  bg-[#5a372f] rounded-xl ">
-          <div className="w-24 h-5  bg-[#caab7f] rounded-xl ">
-          <div className="w-14 h-5  bg-[#46493e] rounded-xl "></div>
+         <div className="flex items-center justify-center relative  py-6">
+          <div className="w-80 h-6  bg-[#adbcb5] rounded-xl overflow-hidden backdrop-blur-[90px] blur-[1.5px]">
+          <div className="w-60 h-6  bg-[#5a372f] rounded-xl ">
+          <div className="w-40 h-6  bg-[#caab7f] rounded-xl ">
+          <div className="w-20 h-6  bg-[#46493e] rounded-xl "></div>
           </div>
           </div>
         </div>
-
-            <h2 className="absolute md:text-[18px] max-md:text-[16px]  text-white font-bold">
+         <h2 className="absolute md:text-[18px] max-md:text-[16px]  text-white font-bold">
                  جستجوی رایحه ی دوست داشتنی تو
-            </h2>
-            </div>
+         </h2>
+         </div>
 
-            <div className="lg:6/12 max-lg:w-8/12 max-sm:w-full grid grid-cols-3 mx-auto">
+
+            <div className="max-w-[600px] min-w-[300px] grid grid-cols-3 mx-auto ">
               {matchedProducts.map((product, index) => (
                 <div
                   key={index}
-                  className=" flex flex-col justify-center items-center p-4"
+                  className=" flex flex-col justify-center items-center p-4 "
                 >
                   <img
                     src={product.image}

@@ -20,7 +20,7 @@ export default function Product () {
         {products.map(product => (
           <Link key={product.id}
           to={`/shoppingCart/${product.id}`}>
-          <div  className="min-w-[200px] max-w-[350px] ">
+          <div  className="min-w-[250px] max-w-[350px] px-4">
             <div className="w-full flex justify-between items-center">
               <div className="flex items-center ">
                 <p className="text-[28px] text-gray-900">{product.number}</p>
@@ -31,9 +31,9 @@ export default function Product () {
             <img
               src={product.img}
               alt={product.name}
-              className="w-full h-52 object-cover border-6 border-[#886b41] hover:scale-102 hover:shadow-xl hover:brightness-105 transition-all duration-300"
+              className="aspect-square object-cover border-6 border-[#886b41] hover:scale-102 hover:shadow-xl hover:brightness-105 transition-all duration-300"
             />
-            <div className="py-[2px]  text-right">
+            <div className="py-[2px] text-right">
               <p className="md:text-[14px] max-md:text-[12px] text-gray-900">قیمت : {product.price} تومان</p>
             </div>
           </div>
