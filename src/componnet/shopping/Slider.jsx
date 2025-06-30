@@ -154,15 +154,15 @@ const ProductSlider = () => {
           {products.map(({ id, name, img1 }) => (
             <div key={id} className="md:px-4">
               <div className="">
-                <div className="flex justify-center items-center min-w-[290px] max-w-[500px] max-sm:w-full mx-auto ">
+                <div className="flex justify-center items-center md:max-w-[300px] md:min-w-[250px] max-md:min-w-[200px] max-md:max-w-[280px] mx-auto ">
                   <img
                     src={img1}
                     alt={`${name} product 1`}
-                    className="md:w-full h-52 object-cover border-6 border-[#886b41]  "
+                    className="aspect-square object-cover border-6 border-[#886b41]  "
                   />
                 </div>
 
-                <div className="flex  items-center justify-end">
+                <div className="flex  items-center justify-end  md:max-w-[300px] md:min-w-[250px] max-md:min-w-[200px] max-md:max-w-[280px] mx-auto">
                 <p className=" text-right text-[16px] text-gray-700 select-none px-1">
                   {name}
                   </p>

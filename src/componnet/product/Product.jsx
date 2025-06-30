@@ -20,7 +20,7 @@ export default function Product () {
         {products.map(product => (
           <Link key={product.id}
           to={`/shoppingCart/${product.id}`}>
-          <div  className="min-w-[250px] max-w-[350px] px-4">
+          <div  className="md:max-w-[300px] md:min-w-[250px] max-md:min-w-[200px] max-md:max-w-[280px] px-4">
             <div className="w-full flex justify-between items-center">
               <div className="flex items-center ">
                 <p className="text-[28px] text-gray-900">{product.number}</p>

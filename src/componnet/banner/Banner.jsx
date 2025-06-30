@@ -65,7 +65,7 @@ export default function Banner() {
 
    <div className="w-full max-sm:hidden sm:flex md:justify-center sm:gap-8 mx-2 max-md:justify-evenly py-6">
         {products.map(product => (
-          <div key={product.id} className="min-w-[250px] max-w-[320px] lg:max-w-[350px] shadow-lg">
+          <div key={product.id} className="min-w-[250px] max-w-[300px] lg:max-w-[350px] shadow-lg">
             <div className=' w-full flex justify-between items-center '>
              <div className='flex items-center text-white'>
               <p className=' text-[28px]'>{product.number}</p>
@@ -106,7 +106,7 @@ export default function Banner() {
   ))}
 </div>
       */}
-      <div className=" mx-auto p-5 sm:hidden max-w-[350px] min-w-[300px]">
+      <div className=" mx-auto p-5 sm:hidden max-w-[300px] min-w-[200px]">
         <Slider {...settings}>
           {products.map(product => (
             <div key={product.id} className="shadow-lg w-full focus:outline-none ">
