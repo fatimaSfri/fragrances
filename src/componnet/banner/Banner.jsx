@@ -81,31 +81,6 @@ export default function Banner() {
         ))}
       </div>
 
-
-{/* <div className=" max-sm:hidden sm:flex md:justify-center md:gap-8 max-md:justify-evenly py-6">
-  {products.map(product => (
-    <div key={product.id} className="border border-red-500 shadow-lg">
-      <div className="  flex justify-between items-center px-4 pt-4">
-        <div className="flex items-center text-white ">
-          <p className="text-[28px]">{product.number}</p>
-          <p className="px-1 text-[12px] pt-1">{product.name}</p>
-        </div>
-        <p className="text-white text-[12px]">{product.text}</p>
-      </div>
-      <div className=" aspect-[5/3]">
-        <img
-          src={product.img}
-          alt={product.name}
-          className=" h-full object-contain border-4 border-[#886b41] border-solid"
-        />
-      </div>
-      <div className="px-4 py-[2px]">
-        <p className="text-white text-[12px]">PRICE: {product.price}</p>
-      </div>
-    </div>
-  ))}
-</div>
-      */}
       <div className=" mx-auto p-5 sm:hidden max-w-[300px] min-w-[200px]">
         <Slider {...settings}>
           {products.map(product => (
